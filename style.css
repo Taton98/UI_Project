@@ -39,10 +39,11 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-height: 90%; /* Ustaw wysokość maksymalną dla przewijania */
-    overflow-y: auto; /* Włącza przewijanie w pionie */
-    scrollbar-width: thin; /* Opcjonalnie: cieńszy pasek przewijania */
-    scrollbar-color: #666 #333; /* Kolor paska przewijania */
+    max-height: 90%;
+    overflow-y: auto;
+    border-radius: 5px;
+    scrollbar-width: thin;
+    scrollbar-color: #666 #333;
 }
 
 /* Stylizacja dla Webkit (Chrome, Safari) */
@@ -63,7 +64,7 @@ body {
     background: #444;
     padding: 15px;
     cursor: pointer;
-
+    border-radius: 5px;
 }
 
 .task.completed {
@@ -99,7 +100,6 @@ body {
 .task-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background: #3a3a3a;
     padding: 15px;
 }
@@ -127,7 +127,8 @@ body {
 }
 
 .task-date {
-    width: 100%;
+    display: flex;
+    width: 98%;
     padding: 10px;
     background: #111;
     border: none;
@@ -136,7 +137,7 @@ body {
 }
 
 .task-desc {
-    width: 100%;
+    width: 98%;
     height: 300px;
     padding: 10px;
     background: #333;
